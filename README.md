@@ -1,9 +1,9 @@
 # Wolfram 语言编程：从概念到应用
-# https://www.wolfram.com/wolfram-u/special-event/programming-concepts-to-applications/index.zh.php
+https://www.wolfram.com/wolfram-u/special-event/programming-concepts-to-applications/index.zh.php
 
-# 通过该免费的编程课，发展技能、拓展知识、开发工具，使用 Wolfram 语言构建自己的项目。每节网课都将全面介绍核心语言概念，并讲授如何将其应用于现实的编程场景中。
+通过该免费的编程课，发展技能、拓展知识、开发工具，使用 Wolfram 语言构建自己的项目。每节网课都将全面介绍核心语言概念，并讲授如何将其应用于现实的编程场景中。
 
-# 总共有八次网课，以编程基础和函数开始，并逐步发展到更高级的概念和技术。在此过程中，您将学习有关良好编程习惯，调试和使用 Wolfram 语言编写高效代码的技巧。
+总共有八次网课，以编程基础和函数开始，并逐步发展到更高级的概念和技术。在此过程中，您将学习有关良好编程习惯，调试和使用 Wolfram 语言编写高效代码的技巧。
 
 特色内容
 第一节（1/25）
@@ -31,7 +31,11 @@
 神经网络架构以及图像处理功能综述
 
 Quiz:
-1- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/01_quiz.nb
-2- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/02_quiz.nb
-3- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/03_quiz.nb
-4- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/04_quiz.nb
+
+1. https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/01_quiz.nb
+
+2. https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/02_quiz.nb
+
+3. https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/03_quiz.nb
+
+4. https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/04_quiz.nb
