@@ -1,0 +1,2676 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    107774,       2667]
+NotebookOptionsPosition[     97438,       2481]
+NotebookOutlinePosition[    104068,       2633]
+CellTagsIndexPosition[    103996,       2628]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Quiz 3", "ProblemTitle"],
+
+Cell["Problem 1", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "1"}],
+
+Cell[TextData[{
+ "Which of these definitions will cause ",
+ StyleBox["c[2]+c[3]", "InlineFormula"],
+ " to evaluate to function ",
+ StyleBox["c[5]", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[1] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[1] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["x_c + y_c := c[x + y]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[1] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[1] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "c /: c[x_] + c[y_] ^:= c[x + y]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[1] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[1] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["c[x_] + c[y_] ^:= c[x + y]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[1] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[1] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["c[x_] + c[y_] := c[x + y]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[1] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[1] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["x_c + y_c := c[x + y]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["c /: c[x_] + c[y_] ^:= c[x + y]", "InlineFormula"]}]]],
+          "ProblemChoiceText"]}], 3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["c[x_] + c[y_] ^:= c[x + y]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 4 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["c[x_] + c[y_] := c[x + y]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}]}, Appearance -> "Vertical", BaselinePosition -> 
+    Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 2", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "2"}],
+
+Cell[TextData[{
+ "With the following definition for a function ",
+ StyleBox["g", "InlineFormula"],
+ " , what is returned by ",
+ StyleBox["g[2.0, 3]", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{"ClearAll", "[", "g", "]"}], "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"SetAttributes", "[", 
+     RowBox[{"g", ",", " ", "Orderless"}], "]"}], ";"}], " "}], 
+  "InlineFormula"], "\n", 
+ RowBox[{
+  StyleBox[
+   RowBox[{"g", "[", 
+    RowBox[{"x_Integer", ",", " ", "y_Real"}], "]"}], "InlineFormula"], 
+  StyleBox[" ", "InlineFormula"], 
+  StyleBox[":=", "InlineFormula"], 
+  StyleBox[" ", "InlineFormula"], 
+  StyleBox[
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}], "InlineFormula"], 
+  StyleBox[
+   RowBox[{
+    StyleBox[" ", "InlineFormula"], "  "}]]}]}], "Input",
+ CellChangeTimes->{{3.7900018014673653`*^9, 3.790001832947091*^9}, {
+   3.7900064322699757`*^9, 3.790006496219398*^9}, 3.790006535534739*^9, {
+   3.79001125438453*^9, 3.790011254711433*^9}, {3.79829808191033*^9, 
+   3.7982981916760406`*^9}, {3.7982984977587147`*^9, 3.79829849932661*^9}, 
+   3.798298929417982*^9, {3.798308833979581*^9, 3.798308844435227*^9}, {
+   3.798477263234591*^9, 3.7984772671865664`*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[2] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[2] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["g[2., 3]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[2] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[2] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["{2., 3}", "InlineFormula"]}]], "ProblemChoiceText",
+               StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[2] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[2] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["{3, 2.}", "InlineFormula"]}]], "ProblemChoiceText",
+               StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[2] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[2] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["g[3, 2.]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[2] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[2] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["g[2., 3]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["{2., 3}", "InlineFormula"]}]]], "ProblemChoiceText"]}],
+      3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["{3, 2.}", "InlineFormula"]}]]], "ProblemChoiceText"]}],
+      4 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["g[3, 2.]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}]}, Appearance -> "Vertical", BaselinePosition -> 
+    Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 3", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "3"}],
+
+Cell[TextData[{
+ "With the following definition for a function ",
+ StyleBox["f", "InlineFormula"],
+ " , what will evaluation of ",
+ StyleBox["f[-10]", "InlineFormula"],
+ " do?"
+}], "ProblemCaption"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{"Clear", "[", "f", "]"}], "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "::", "badarg"}], "=", 
+    "\"\<The function f expects a positive number as the argument\>\""}], 
+   ";"}], "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x_", "?", "Positive"}], "]"}], ":=", 
+   RowBox[{"Log", "[", "x", "]"}]}], "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"f", "[", "___", "]"}], ":=", " ", 
+   RowBox[{"$Failed", " ", "/;", " ", 
+    RowBox[{"Message", "[", 
+     RowBox[{"f", "::", "badarg"}], "]"}]}]}], "InlineFormula"]}], "Input",
+ CellChangeTimes->{{3.7900018014673653`*^9, 3.790001832947091*^9}, {
+  3.79000681944965*^9, 3.790006833981285*^9}, {3.790011467766199*^9, 
+  3.7900114740968313`*^9}, {3.79001667532062*^9, 3.790016697637472*^9}, {
+  3.79829874811102*^9, 3.798298925698151*^9}, {3.7982989905691013`*^9, 
+  3.7982989909289103`*^9}, {3.798308785278343*^9, 3.798308803862364*^9}, {
+  3.798477198109213*^9, 3.798477218092655*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[3] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[3] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{"Generate an error message and return ", 
+                 StyleBox["f[-10]", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[3] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[3] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{"Generate an error message and return ", 
+                 StyleBox["$Failed", "InlineFormula"]}]], "ProblemChoiceText",
+               StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[3] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[3] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{"Return ", 
+                 StyleBox["f[-10]", "InlineFormula"], 
+                 " without an error message."}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[3] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[3] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{"Generate an error message and return ", 
+                 StyleBox[
+                 "\[ImaginaryI] \[Pi] + Log[10]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[3] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[3] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{"Generate an error message and return ", 
+             StyleBox["f[-10]", "InlineFormula"]}]]], "ProblemChoiceText"]}], 
+     2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{"Generate an error message and return ", 
+             StyleBox["$Failed", "InlineFormula"]}]]], "ProblemChoiceText"]}],
+      3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{"Return ", 
+             StyleBox["f[-10]", "InlineFormula"], 
+             " without an error message."}]]], "ProblemChoiceText"]}], 4 -> 
+     Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{"Generate an error message and return ", 
+             StyleBox["\[ImaginaryI] \[Pi] + Log[10]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}]}, Appearance -> "Vertical", BaselinePosition -> 
+    Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 4", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "4"}],
+
+Cell[TextData[{
+ "What is the result of evaluating ",
+ StyleBox["Block[{y=10}, Hold[y]]", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[4] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[4] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["Hold[y]", "InlineFormula"]}]], "ProblemChoiceText",
+               StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[4] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[4] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["Hold[10]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[4] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[4] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["10", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[4] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[4] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["y", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[4] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[4] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["Hold[y]", "InlineFormula"]}]]], "ProblemChoiceText"]}],
+      2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["Hold[10]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["10", "InlineFormula"]}]]], "ProblemChoiceText"]}], 4 -> 
+     Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["y", "InlineFormula"]}]]], "ProblemChoiceText"]}]}, 
+    Appearance -> "Vertical", BaselinePosition -> Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 5", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "5"}],
+
+Cell[TextData[{
+ "What is the result of evaluating ",
+ StyleBox["Function[x, Table[x, {i, 5}]][x[i]]", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[5] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[5] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["{1, 2, 3, 4, 5}", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[5] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[5] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["{x, x, x, x, x}", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[5] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[5] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "{x[i], x[i], x[i], x[i], x[i]}", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[5] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[5] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "{x[1], x[2], x[3], x[4], x[5]}", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[5] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[5] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["{1, 2, 3, 4, 5}", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["{x, x, x, x, x}", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["{x[i], x[i], x[i], x[i], x[i]}", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 4 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["{x[1], x[2], x[3], x[4], x[5]}", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}]}, Appearance -> "Vertical", BaselinePosition -> 
+    Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 6", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "6"}],
+
+Cell[TextData[{
+ "What is the default display of the result returned by ",
+ StyleBox["Inactivate[1 + 2 + 3]", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[6] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[6] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["Inactive[6]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[6] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[6] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["1 + 2 + 3", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[6] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[6] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["Inactive[1 + 2 + 3]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[6] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[6] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["Inactive[Plus][1, 2, 3]", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[6] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[6] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["Inactive[6]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["1 + 2 + 3", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["Inactive[1 + 2 + 3]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 4 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["Inactive[Plus][1, 2, 3]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}]}, Appearance -> "Vertical", BaselinePosition -> 
+    Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 7", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "7"}],
+
+Cell[TextData[{
+ "Which of these inputs returns ",
+ StyleBox["Function[x, 2x]", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[7] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[7] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Block[{expr = 2 x}, Function[x, expr]]", 
+                  "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> 
+              False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[7] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[7] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Block[{expr = 2 x}, Function[x, Evaluate[expr]]]", 
+                  "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> 
+              False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[7] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[7] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Block[{expr = 2 x}, Evaluate[Function[x, expr]]]", 
+                  "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> 
+              False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[7] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[7] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell["All of the above"], "ProblemChoiceText", StripOnInput -> 
+              False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[7] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[7] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Block[{expr = 2 x}, Function[x, expr]]", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Block[{expr = 2 x}, Function[x, Evaluate[expr]]]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}], 3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Block[{expr = 2 x}, Evaluate[Function[x, expr]]]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}], 4 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell["All of the above"]], "ProblemChoiceText"]}]}, Appearance -> 
+    "Vertical", BaselinePosition -> Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 8", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "8"}],
+
+Cell[TextData[{
+ "Which of these inputs returns ",
+ StyleBox["{1 + x, 4}", "InlineFormula"],
+ "?"
+}], "ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[8] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[8] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Cases[{1 + x, 2 x, 2 + 2}, HoldPattern[_ + _]]", 
+                  "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> 
+              False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[8] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[8] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Cases[Unevaluated[{1 + x, 2 x, 2 + 2}], _ + _]", 
+                  "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> 
+              False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[8] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[8] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Cases[Unevaluated[{1 + x, 2 x, 2 + 2}], HoldPattern[_ + \
+_]]", "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[8] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[8] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "Cases[HoldPattern[{1 + x, 2 x, 2 + 2}], Unevaluated[_ + \
+_]]", "InlineFormula"]}]], "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[8] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[8] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Cases[{1 + x, 2 x, 2 + 2}, HoldPattern[_ + _]]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Cases[Unevaluated[{1 + x, 2 x, 2 + 2}], _ + _]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}], 3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Cases[Unevaluated[{1 + x, 2 x, 2 + 2}], HoldPattern[_ + _]]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}], 4 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "Cases[HoldPattern[{1 + x, 2 x, 2 + 2}], Unevaluated[_ + _]]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}]}, Appearance -> 
+    "Vertical", BaselinePosition -> Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 9", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "9"}],
+
+Cell["What is the output of this program?", "ProblemCaption"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"Clear", "[", "f", "]"}], ";"}], "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", 
+     RowBox[{"x_", "?", "Positive"}], "]"}], ":=", " ", "positive"}], ";"}], 
+  "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "x_Integer", "]"}], "  ", ":=", " ", "integer"}], ";"}],
+   "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "2", "]"}], " ", "=", " ", "2"}], ";"}], 
+  "InlineFormula"], "\n", 
+ StyleBox[
+  RowBox[{"f", "[", "2", "]"}], "InlineFormula"]}], "Input",
+ CellChangeTimes->{{3.7900018014673653`*^9, 3.790001832947091*^9}, {
+   3.790002240131774*^9, 3.790002265279467*^9}, 3.7924142743472095`*^9, {
+   3.7924143107764807`*^9, 3.7924143154890037`*^9}, {3.798307726220873*^9, 
+   3.798307762963619*^9}, {3.798477245338647*^9, 3.7984772466218*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[9] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[9] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["positive", "InlineFormula"]}]], 
+              "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[9] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[9] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["integer", "InlineFormula"]}]], "ProblemChoiceText",
+               StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[9] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[9] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["2", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[9] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[9] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["f[2]", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[9] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[9] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["positive", "InlineFormula"]}]]], 
+         "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["integer", "InlineFormula"]}]]], "ProblemChoiceText"]}],
+      3 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["2", "InlineFormula"]}]]], "ProblemChoiceText"]}], 4 -> 
+     Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["f[2]", "InlineFormula"]}]]], "ProblemChoiceText"]}]}, 
+    Appearance -> "Vertical", BaselinePosition -> Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell["Problem 10", "ProblemSectionNoFeedback",
+ TaggingRules->{"QuestionNum" -> "10"}],
+
+Cell["Which of these inputs will return the density of water?", \
+"ProblemCaption"],
+
+Cell[BoxData[
+ DynamicModuleBox[{MOOCNotebook`Quiz`Private`ans$$ = 0}, 
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[10] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[10] -> Blank[]]}]}])& ], {1},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "EntityValue[\[OpenCurlyDoubleQuote]Chemical\
+\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Water\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Density\[CloseCurlyDoubleQuote]]", "InlineFormula"]}]],
+               "ProblemChoiceText", StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[10] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[10] -> Blank[]]}]}])& ], {2},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "EntityValue[Entity[\[OpenCurlyDoubleQuote]Chemical\
+\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Water\[CloseCurlyDoubleQuote]], ", "InlineFormula"], 
+                 Cell[
+                  BoxData[
+                   TemplateBox[{"\"density\"", 
+                    RowBox[{"EntityProperty", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"Density\""}], "]"}], 
+                    "\"EntityProperty[\\\"Chemical\\\", \\\"Density\\\"]\""}, 
+                    "EntityProperty"]], 
+                  CellChangeTimes -> {{3.798308327430985*^9, 
+                   3.798308332321946*^9}}, ExpressionUUID -> 
+                  "e235171d-32e6-4cba-8cc4-65c19d961b62"], 
+                 StyleBox["]", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[10] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[10] -> Blank[]]}]}])& ], {3},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox[
+                 "EntityProperty[Entity[\[OpenCurlyDoubleQuote]Chemical\
+\[CloseCurlyDoubleQuote] \
+\[OpenCurlyDoubleQuote]Water\[CloseCurlyDoubleQuote]], ", "InlineFormula"], 
+                 Cell[
+                  BoxData[
+                   TemplateBox[{"\"density\"", 
+                    RowBox[{"EntityProperty", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"Density\""}], "]"}], 
+                    "\"EntityProperty[\\\"Chemical\\\", \\\"Density\\\"]\""}, 
+                    "EntityProperty"]], 
+                  CellChangeTimes -> {{3.798308327430985*^9, 
+                   3.798308332321946*^9}}, ExpressionUUID -> 
+                  "656639b3-408b-4670-8c09-d1351474fd24"], 
+                 StyleBox["]", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]},
+      {GridBox[{
+         {
+          RadioButtonBox[Dynamic[
+           MOOCNotebook`Quiz`Private`ans$$, (
+            MOOCNotebook`Quiz`Private`ans$$ = #; SetOptions[
+              EvaluationNotebook[], 
+              TaggingRules -> {"Answers" -> Flatten[{ToString[10] -> #, 
+                   DeleteCases[
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "Answers"}], 
+                    ToString[10] -> Blank[]]}]}])& ], {4},
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->"RadioButtonBar"], 
+          StyleBox[
+           TemplateBox[{
+             StyleBox["\" \"", "ProblemChoiceText", StripOnInput -> False], 
+             StyleBox[
+              Cell[
+               TextData[{
+                 StyleBox["EntityValue[", "InlineFormula"], 
+                 Cell[
+                  BoxData[
+                   TemplateBox[{"\"density\"", 
+                    RowBox[{"EntityProperty", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"Density\""}], "]"}], 
+                    "\"EntityProperty[\\\"Chemical\\\", \\\"Density\\\"]\""}, 
+                    "EntityProperty"]], 
+                  CellChangeTimes -> {{3.798308327430985*^9, 
+                   3.798308332321946*^9}}, ExpressionUUID -> 
+                  "998ce820-55e2-414a-b992-5a219fe472a6"], 
+                 StyleBox[",", "InlineFormula"], 
+                 Cell[
+                  BoxData[
+                   TemplateBox[{"\"water\"", 
+                    RowBox[{"Entity", "[", 
+                    RowBox[{"\"Chemical\"", ",", "\"Water\""}], "]"}], 
+                    "\"Entity[\\\"Chemical\\\", \\\"Water\\\"]\"", 
+                    "\"chemical\""}, "Entity"]], 
+                  CellChangeTimes -> {{3.798308327430985*^9, 
+                    3.798308332321946*^9}, 3.798308480579977*^9}, 
+                  ExpressionUUID -> "604eba4a-74a2-4470-9b58-880f2c55bd6a"], 
+                 StyleBox["]", "InlineFormula"]}]], "ProblemChoiceText", 
+              StripOnInput -> False]},
+            "RowDefault"], "RadioButtonBarLabel",
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        BaselinePosition->{1, 2},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.21]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}], 
+    "Deploy"],
+   RadioButtonBar[
+    Dynamic[
+    MOOCNotebook`Quiz`Private`ans$$, (MOOCNotebook`Quiz`Private`ans$$ = #; 
+     SetOptions[
+       EvaluationNotebook[], 
+       TaggingRules -> {"Answers" -> Flatten[{ToString[10] -> #, 
+            DeleteCases[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "Answers"}], ToString[10] -> 
+             Blank[]]}]}])& ], {1 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "EntityValue[\[OpenCurlyDoubleQuote]Chemical\
+\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Water\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Density\[CloseCurlyDoubleQuote]]", 
+              "InlineFormula"]}]]], "ProblemChoiceText"]}], 2 -> Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "EntityValue[Entity[\[OpenCurlyDoubleQuote]Chemical\
+\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]Water\[CloseCurlyDoubleQuote]], ", "InlineFormula"], 
+             Cell[
+              BoxData[
+               TemplateBox[{"\"density\"", 
+                 RowBox[{"EntityProperty", "[", 
+                   RowBox[{"\"Chemical\"", ",", "\"Density\""}], "]"}], 
+                 "\"EntityProperty[\\\"Chemical\\\", \\\"Density\\\"]\""}, 
+                "EntityProperty"]], 
+              CellChangeTimes -> {{3.798308327430985*^9, 
+               3.798308332321946*^9}}, ExpressionUUID -> 
+              "e235171d-32e6-4cba-8cc4-65c19d961b62"], 
+             StyleBox["]", "InlineFormula"]}]]], "ProblemChoiceText"]}], 3 -> 
+     Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox[
+             "EntityProperty[Entity[\[OpenCurlyDoubleQuote]Chemical\
+\[CloseCurlyDoubleQuote] \
+\[OpenCurlyDoubleQuote]Water\[CloseCurlyDoubleQuote]], ", "InlineFormula"], 
+             Cell[
+              BoxData[
+               TemplateBox[{"\"density\"", 
+                 RowBox[{"EntityProperty", "[", 
+                   RowBox[{"\"Chemical\"", ",", "\"Density\""}], "]"}], 
+                 "\"EntityProperty[\\\"Chemical\\\", \\\"Density\\\"]\""}, 
+                "EntityProperty"]], 
+              CellChangeTimes -> {{3.798308327430985*^9, 
+               3.798308332321946*^9}}, ExpressionUUID -> 
+              "656639b3-408b-4670-8c09-d1351474fd24"], 
+             StyleBox["]", "InlineFormula"]}]]], "ProblemChoiceText"]}], 4 -> 
+     Row[{
+        Style[" ", "ProblemChoiceText"], 
+        Style[
+         RawBoxes[
+          Cell[
+           TextData[{
+             StyleBox["EntityValue[", "InlineFormula"], 
+             Cell[
+              BoxData[
+               TemplateBox[{"\"density\"", 
+                 RowBox[{"EntityProperty", "[", 
+                   RowBox[{"\"Chemical\"", ",", "\"Density\""}], "]"}], 
+                 "\"EntityProperty[\\\"Chemical\\\", \\\"Density\\\"]\""}, 
+                "EntityProperty"]], 
+              CellChangeTimes -> {{3.798308327430985*^9, 
+               3.798308332321946*^9}}, ExpressionUUID -> 
+              "998ce820-55e2-414a-b992-5a219fe472a6"], 
+             StyleBox[",", "InlineFormula"], 
+             Cell[
+              BoxData[
+               TemplateBox[{"\"water\"", 
+                 RowBox[{"Entity", "[", 
+                   RowBox[{"\"Chemical\"", ",", "\"Water\""}], "]"}], 
+                 "\"Entity[\\\"Chemical\\\", \\\"Water\\\"]\"", 
+                 "\"chemical\""}, "Entity"]], 
+              CellChangeTimes -> {{3.798308327430985*^9, 
+                3.798308332321946*^9}, 3.798308480579977*^9}, ExpressionUUID -> 
+              "604eba4a-74a2-4470-9b58-880f2c55bd6a"], 
+             StyleBox["]", "InlineFormula"]}]]], "ProblemChoiceText"]}]}, 
+    Appearance -> "Vertical", BaselinePosition -> Baseline]],
+  DynamicModuleValues:>{}]], "ProblemChoiceGrid"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`buttonLabel$$ = "Get Results"}, 
+  DynamicBox[ToBoxes[
+    If[
+     Not[
+      TrueQ[
+       CurrentValue[
+        EvaluationNotebook[], {TaggingRules, "QuizChecked"}, False]]], 
+     MouseAppearance[
+      Button[
+       Style[$CellContext`buttonLabel$$, "CheckButtonText", 
+        ShowStringCharacters -> False], $CellContext`buttonLabel$$ = Pane[
+          Row[{" CHECKING ", 
+            ProgressIndicator[Appearance -> "Percolate"]}]]; 
+       MOOC`CheckAnswers[]; 
+       MOOC`SetQuizChecked[True]; $CellContext`buttonLabel$$ = "Get Results"; 
+       Null, BaseStyle -> "CheckButton", Evaluator -> Automatic, Method -> 
+       "Queued"], "LinkHand"], 
+     Module[{
+      MOOCNotebook`Quiz`Private`answers$, 
+       MOOCNotebook`Quiz`Private`correctAnswers$, 
+       MOOCNotebook`Quiz`Private`numberOfAnswers$, 
+       MOOCNotebook`Quiz`Private`corr$, 
+       MOOCNotebook`Quiz`Private`percentCorrect$}, 
+      MOOCNotebook`Quiz`Private`answers$ = CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Answers"}]; 
+      MOOCNotebook`Quiz`Private`numberOfAnswers$ = 
+       Length[MOOCNotebook`Quiz`Private`answers$]; 
+      MOOCNotebook`Quiz`Private`correctAnswers$ = CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "CorrectAnswers"}]; If[
+        And[
+         MemberQ[{Inherited, $Failed}, 
+          MOOCNotebook`Quiz`Private`correctAnswers$], False], 
+        MOOC`SetTaggingRule["CorrectAnswers", 
+         Map[# -> False& , 
+          Range[
+           Length[MOOCNotebook`Quiz`Private`answers$]]]]]; If[
+        And[
+         ListQ[MOOCNotebook`Quiz`Private`correctAnswers$], 
+         Length[MOOCNotebook`Quiz`Private`correctAnswers$] > 0], 
+        MOOCNotebook`Quiz`Private`corr$ = Map[ToString, {
+            Length[
+             Select[MOOCNotebook`Quiz`Private`correctAnswers$, TrueQ[
+               Part[#, 2]]& ]], 
+            Length[MOOCNotebook`Quiz`Private`correctAnswers$]}]; 
+        MOOCNotebook`Quiz`Private`percentCorrect$ = StringJoin[
+           ToString[
+            Round[100 (Length[
+                Select[MOOCNotebook`Quiz`Private`correctAnswers$, TrueQ[
+                  Part[#, 2]]& ]]/Length[
+              MOOCNotebook`Quiz`Private`correctAnswers$])]], "%"], 
+        MOOCNotebook`Quiz`Private`corr$ = {"0", 
+           ToString[
+            Length[MOOCNotebook`Quiz`Private`answers$]]}; 
+        MOOCNotebook`Quiz`Private`percentCorrect$ = "0"]; 
+      With[{MOOCNotebook`Quiz`Private`percent$ = 
+         MOOCNotebook`Quiz`Private`percentCorrect$, 
+         MOOCNotebook`Quiz`Private`correct$ = 
+         MOOCNotebook`Quiz`Private`corr$}, 
+        Grid[{{
+           Style["Quiz Results", "QuizResultsText"]}, {
+           Row[{
+             Style["Your score is ", "ScoreText"], 
+             Style[
+             MOOCNotebook`Quiz`Private`percent$, "ScoreText", FontFamily -> 
+              "Source Sans Pro Semibold", AutoMultiplicationSymbol -> 
+              False]}]}, {
+           Style[
+            StringJoin["You answered ", 
+             Part[MOOCNotebook`Quiz`Private`correct$, 1], " out of ", 
+             Part[MOOCNotebook`Quiz`Private`correct$, 2], 
+             " problems correctly.  Your quiz score has been recorded."], 
+            "NumProbsCorrectText"]}, 
+          If[False, {
+            Row[
+             Flatten[{
+               Map[{
+                 PaneSelector[{True -> Image[CompressedData["
+1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBAkBOaF5xZnpeaopnXklqemqRRRIz
+UFADiFWAmIVhQACjTJBMHgMbA9fAWI8CGNUL1ae7HHD5b9hvuI+BmYFzMLgF
+hvXb9DcB3cQ2GNwygG7C6RYY1mvWXQ9UxzwY3ALD2jXaS2nsJqLdAsPykfLl
+g8Ut4PxGmzJgRLiFWZBZcrC4RcZPKtNxh+NXfn1+h4F2i6SHeAJMj/1W+488
+Gjzm1HaLyVST48S4RdxFPNp5n/NfZL0E3ES6W6abnGTmZOYnxy3IbuJU4NSl
+l1uErYT9HPc4/sZnlt0Gu9dIbqKdWyyEfYFu+UWMmVA36dDKLSAAShug+CDW
+bMedjt9p5Ra4mzR5LIH2fCPFHlq5BQb4DfidqOkmStxCbTdRwy0wAEzfPsSm
+b1q7Be4mSP4n2U3m88wvUdstcDfZCAfgKh9xuOUyMw+zKC3cAgP4ymx6u4VY
+N9HTLTAg6S2ZOljcAgOgNtFgcQvcTQFS2YPFLTAg6SWZMljcMgpGwSgYBaOA
+fgAAMnZL2A==
+                    "], "Byte", ColorSpace -> "RGB", ImageSize -> 
+                    Automatic, Interleaving -> True, Magnification -> 0.5], 
+                   False -> Image[CompressedData["
+1:eJztl7EKwkAMhovn4OhqEYvioKC7q6Or4gNUrMWlQiuI7+fuqpOLTo4+gF6G
+g4KlXpJrz6E/pEfb//INLUmuu9rNNzXHcZKGvMz9wzSO/eOiKW+WUbINo2A9
+i/ZBGMSTlZAPBzI6MurOt4ZCjE8t99wVop/xGiXIAbkGQox++S6ud395vTes
+HLZurrRPBZWtmyvLR2Xr5srzYdmYXPDd83y6bB2mCmDC/3tre08OG8MEFjBh
+H6xX13tQ2BgmMBSTsl+xKXu43wh8JpgUtimmaTal7nDZnDpLZXNrO4VtggnC
+1BWIdF0oi2mCTWVy2FwmhW2KiWFjexOlB3GZ2L6Qxeb0YE7vtdH3bc05tua6
+X/6i5tg8f9Fze5a/rHOKko1zWaVKlSr9sz4GxjG4
+                    "], "Byte", 
+                    ColorSpace -> "RGB", ImageSize -> Automatic, Interleaving -> 
+                    True, Magnification -> 0.5]}, 
+                  Part[#, 2]], 
+                 Spacer[3], 
+                 Style[
+                  Part[#, 1], "NumProbsCorrectText"], 
+                 Spacer[24]}& , 
+                MOOCNotebook`Quiz`Private`correctAnswers$]}]]}, Nothing], 
+          If[True, {
+            Style[
+             StringJoin[
+             "In order to be eligible for a certificate of course completion, \
+you must score ", 
+              ToString[60], "% on all course quizzes."], 
+             "NumProbsCorrectText"]}, Nothing], {
+           If[
+            StringMatchQ[MOOCNotebook`Quiz`Private`percent$, "100%"], 
+            Nothing[], 
+            Column[{
+              Style["You can retake this quiz!", "NumProbsCorrectText"], 
+              Style[
+              "Select different responses to the quiz problems and get new \
+results.", "NumProbsCorrectText"]}, Frame -> None, FrameStyle -> 
+             Thickness[0]]]}}, 
+         Spacings -> {"Rows" -> {3, 1, 2, 1, 2, 3}, "Columns" -> {3}}]]]], 
+    StandardForm],
+   ImageSizeCache->{160., {12., 28.}}],
+  DynamicModuleValues:>{},
+  Initialization:>(
+   MOOC`CheckAnswers[] := 
+    Module[{MOOCNotebook`Quiz`Private`answers$, 
+       MOOCNotebook`Quiz`Private`correctAnswers$, 
+       MOOCNotebook`Quiz`Private`results$, MOOCNotebook`Quiz`Private`tags$, 
+       MOOCNotebook`Quiz`Private`success$, MOOCNotebook`Quiz`Private`wid$ = 
+       ToString[$WolframID], MOOCNotebook`Quiz`Private`wuuid$ = 
+       ToString[$WolframUUID]}, 
+      MOOCNotebook`Quiz`Private`answers$ = CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Answers"}]; If[
+        ListQ[MOOCNotebook`Quiz`Private`answers$], 
+        MOOCNotebook`Quiz`Private`answers$ = ExportString[
+           Association[MOOCNotebook`Quiz`Private`answers$], "RawJSON"]; 
+        With[{MOOCNotebook`Quiz`Private`id$ = ToString[$WolframID], 
+           MOOCNotebook`Quiz`Private`uuid$ = ToString[$WolframUUID]}, 
+          MOOCNotebook`Quiz`Private`results$ = URLExecute[
+            CloudObject[
+            "https://www.wolframcloud.com/obj/online-courses/api/daily-study-\
+group/get/quiz-verification/203"], {
+            "userAnswers" -> MOOCNotebook`Quiz`Private`answers$, "wid" -> 
+             MOOCNotebook`Quiz`Private`id$, "wuuid" -> 
+             MOOCNotebook`Quiz`Private`uuid$}]]; 
+        MOOCNotebook`Quiz`Private`success$ = If[
+           StringQ[MOOCNotebook`Quiz`Private`results$], 
+           ToExpression[MOOCNotebook`Quiz`Private`results$], $Failed]; 
+        MOOCNotebook`Quiz`Private`success$ = SortBy[
+           If[
+            AssociationQ[MOOCNotebook`Quiz`Private`success$], 
+            Normal[MOOCNotebook`Quiz`Private`success$], 
+            MOOCNotebook`Quiz`Private`success$], ToExpression[
+            First[#]]& ]; If[
+          ListQ[MOOCNotebook`Quiz`Private`success$], 
+          MOOCNotebook`Quiz`Private`tags$ = MOOC`ResetOptions[
+             CurrentValue[
+              EvaluationNotebook[], TaggingRules], "CorrectAnswers" -> 
+             Normal[MOOCNotebook`Quiz`Private`success$]]; If[
+            ListQ[MOOCNotebook`Quiz`Private`tags$], 
+            SetOptions[
+             EvaluationNotebook[], TaggingRules -> 
+             MOOCNotebook`Quiz`Private`tags$]]; 
+          With[{MOOCNotebook`Quiz`Private`id$ = ToString[$WolframID], 
+             MOOCNotebook`Quiz`Private`uuid$ = ToString[$WolframUUID]}, 
+            If[
+             And[
+              StringQ[
+              "https://www.wolframcloud.com/obj/online-courses/daily-study-\
+group/api/log/quiz"], 
+              StringMatchQ[
+              "https://www.wolframcloud.com/obj/online-courses/daily-study-\
+group/api/log/quiz", "http*"]], 
+             URLExecute[
+              CloudObject[
+              "https://www.wolframcloud.com/obj/online-courses/daily-study-\
+group/api/log/quiz"], {
+              "id" -> MOOCNotebook`Quiz`Private`id$, "uuid" -> 
+               MOOCNotebook`Quiz`Private`uuid$, "quiznum" -> ToString[203], 
+               "correctpercent" -> ToString[
+                 Round[Divide[
+                    Count[
+                    MOOCNotebook`Quiz`Private`success$, Blank[] -> True], 
+                    Length[MOOCNotebook`Quiz`Private`success$]] 100]], 
+               "answers" -> ToString[MOOCNotebook`Quiz`Private`answers$]}]]]; 
+          True, $Failed], $Failed]]; MOOC`SetQuizChecked[
+      Pattern[MOOCNotebook`Quiz`Private`val, 
+       Blank[]]] := 
+    MOOC`SetTaggingRule["QuizChecked", MOOCNotebook`Quiz`Private`val]; 
+   MOOC`SetTaggingRule[
+      Pattern[MOOCNotebook`Quiz`Private`tag, 
+       Blank[]], 
+      Pattern[MOOCNotebook`Quiz`Private`val, 
+       Blank[]]] := 
+    Module[{MOOCNotebook`Quiz`Private`tags}, 
+      MOOCNotebook`Quiz`Private`tags = MOOC`ResetOptions[
+         CurrentValue[
+          EvaluationNotebook[], TaggingRules], MOOCNotebook`Quiz`Private`tag -> 
+         MOOCNotebook`Quiz`Private`val]; If[
+        ListQ[MOOCNotebook`Quiz`Private`tags], 
+        SetOptions[
+         EvaluationNotebook[], TaggingRules -> 
+         MOOCNotebook`Quiz`Private`tags]]]; MOOC`ResetOptions[
+      Pattern[MOOCNotebook`Quiz`Private`h, 
+       Blank[]][
+       Pattern[MOOCNotebook`Quiz`Private`stuff, 
+        BlankNullSequence[]], 
+       PatternTest[
+        Pattern[MOOCNotebook`Quiz`Private`opts, 
+         BlankNullSequence[]], OptionQ]], 
+      PatternTest[
+       Pattern[MOOCNotebook`Quiz`Private`newopts, 
+        BlankSequence[]], OptionQ]] := 
+    MOOCNotebook`Quiz`Private`h[MOOCNotebook`Quiz`Private`stuff, 
+      Apply[Sequence, 
+       Flatten[{MOOCNotebook`Quiz`Private`newopts}]], 
+      Apply[Sequence, 
+       DeleteCases[{MOOCNotebook`Quiz`Private`opts}, 
+        Blank[][
+         Apply[Alternatives, 
+          Part[
+           Flatten[{MOOCNotebook`Quiz`Private`newopts}], All, 1]], 
+         Blank[]]]]]; MOOC`ResetOptions[
+      Pattern[MOOCNotebook`Quiz`Private`h, 
+       Blank[]][
+       Pattern[MOOCNotebook`Quiz`Private`stuff, 
+        BlankNullSequence[]]], 
+      PatternTest[
+       Pattern[MOOCNotebook`Quiz`Private`newopts, 
+        BlankSequence[]], OptionQ]] := 
+    MOOCNotebook`Quiz`Private`h[
+     MOOCNotebook`Quiz`Private`stuff, 
+      MOOCNotebook`Quiz`Private`newopts])]], "ResultsGrid"],
+
+Cell[TextData[StyleBox["", "SmallText",
+ FontColor->GrayLevel[0.6]]], "Text",
+ ShowCellBracket->False,
+ CellTags->"version"]
+},
+WindowSize->{775, 872},
+WindowMargins->{{Automatic, 418}, {49, Automatic}},
+ShowCellBracket->False,
+TaggingRules->{
+ "QuizNumber" -> 203, "QuizChecked" -> False, 
+  "Answers" -> {
+   "1" -> 0, "10" -> 0, "2" -> 0, "3" -> 0, "4" -> 0, "5" -> 0, "6" -> 0, "7" -> 
+    0, "8" -> 0, "9" -> 0}},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["Text"], FontFamily -> "Source Sans Pro"], 
+   Cell[
+    StyleData["ProblemTitle", StyleDefinitions -> StyleData["Text"]], 
+    Editable -> False, Deletable -> False, 
+    CellMargins -> {{70, Inherited}, {15, 80}}, FontSize -> 40, FontColor -> 
+    RGBColor[0.9882352941176471, 0.43137254901960786`, 0.12941176470588237`]], 
+   Cell[
+    StyleData["ProblemSection"], Editable -> False, Deletable -> False, 
+    CellDingbat -> Dynamic[
+      If[
+       TrueQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "QuizChecked"}, False]], 
+       If[
+        TrueQ[
+         CurrentValue[
+          EvaluationNotebook[], {TaggingRules, "CorrectAnswers", 
+           CurrentValue[
+            EvaluationCell[], {TaggingRules, "QuestionNum"}]}]], 
+        Cell[
+         BoxData[
+          GraphicsBox[
+           TagBox[
+            RasterBox[CompressedData["
+1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBAkBOaF5xZnpeaopnXklqemqRRRIz
+UFAOiFWAmIVhQACjTJBMHgMbA9fAWI8CGNUL1ae7HHD5b9hvuI+BmYFzMLgF
+hvXb9DcB3cQ2GNwygG7C6RYY1mvWXQ9UxzwY3ALD2jXaS2nsJqLdAsPykfLl
+g8Ut4PxGmzJgRLiFWZBZcrC4RcZPKtNxh+NXfn1+h4F2i6SHeAJMj/1W+488
+Gjzm1HaLyVST48S4RdxFPNp5n/NfZL0E3ES6W6abnGTmZOYnxy3IbuJU4NSl
+l1uErYT9HPc4/sZnlt0Gu9dIbqKdWyyEfYFu+UWMmVA36dDKLSAAShug+CDW
+bMedjt9p5Ra4mzR5LIH2fCPFHlq5BQb4DfidqOkmStxCbTdRwy0wAEzfPsSm
+b1q7Be4mSP4n2U3m88wvUdstcDfZCAfgKh9xuOUyMw+zKC3cAgP4ymx6u4VY
+N9HTLTAg6S2ZOljcAgOgNtFgcQvcTQFS2YPFLTAg6SWZQku3AADRKkvO
+             "], {{0,
+              30}, {36, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+            BoxForm`ImageTag[
+            "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+             0.5], Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+           ImageSize -> Magnification[0.5], ImageSizeRaw -> {36, 30}, 
+           PlotRange -> {{0, 36}, {0, 30}}]]], 
+        Cell[
+         BoxData[
+          GraphicsBox[
+           TagBox[
+            RasterBox[CompressedData["
+1:eJzF1zELgkAUAGDpGhpbk0iMhoLaWxtbjX6AkkmLgQbR/2tvramlpsZ+QPmg
+A6FD77136sEp6rv3Dcp7pxvsvW3Lsqy0kx08/7hIEv+06mYX6zjdRXG4WcaH
+MAqTeSCym4PfbFv/YyLE7NyzL64QI8Vj1IAckGssxLQs7mo7j7cz/MCZY+vm
+ysfJSbV1c6niqLZurqI4rI3JBe+9KE7X1jHlBBO+33vfeXFsjAkWmLAOzjfb
+eVJsjAmGNCnrpU1Zw31HEGfCpNimTNM2pe5wbU6dpdrc2k6xTZgwMHUFZr4u
+1GWasKkmx+aaFNuUibGxvYnSg7gmti+obE4P5vTeJvp+U/ucpvZ1ZfFV7WOL
+4qvet6vi6/pPkaOu/7IvXXgxrg==
+             "], {{0, 30}, {30, 0}}, {0, 255}, 
+             ColorFunction -> RGBColor], 
+            BoxForm`ImageTag[
+            "Byte", ColorSpace -> "RGB", Interleaving -> True, Magnification -> 
+             0.5], Selectable -> False], DefaultBaseStyle -> "ImageGraphics", 
+           ImageSize -> Magnification[0.5], ImageSizeRaw -> {30, 30}, 
+           PlotRange -> {{0, 30}, {0, 30}}]]]], ""]], 
+    CellMargins -> {{70, Inherited}, {8, 15}}, CounterIncrements -> 
+    "ProblemSection", FontFamily -> "Source Sans Pro Semibold", FontSize -> 
+    18, FontVariations -> {"CapsType" -> "AllCaps"}], 
+   Cell[
+    StyleData["ProblemSectionNoFeedback"], Editable -> False, Deletable -> 
+    False, CellMargins -> {{70, Inherited}, {8, 15}}, CounterIncrements -> 
+    "ProblemSection", FontFamily -> "Source Sans Pro Semibold", FontSize -> 
+    18, FontVariations -> {"CapsType" -> "AllCaps"}], 
+   Cell[
+    StyleData["ProblemCaption", StyleDefinitions -> StyleData["Text"]], 
+    Editable -> False, Deletable -> False, 
+    CellMargins -> {{70, Inherited}, {15, 7}}, FontSize -> 21, FontColor -> 
+    GrayLevel[0]], 
+   Cell[
+    StyleData["ProblemChoiceText", StyleDefinitions -> StyleData["Text"]], 
+    Editable -> False, Deletable -> False, ShowStringCharacters -> False, 
+    FontSize -> 18, FontColor -> GrayLevel[0]], 
+   Cell[
+    StyleData["ProblemChoiceGrid"], Editable -> False, Deletable -> False, 
+    CellMargins -> {{70, Inherited}, {45, 0}}], 
+   Cell[
+    StyleData["CheckButton"], 
+    CellMargins -> {{70, Inherited}, {Inherited, Inherited}}, 
+    ButtonBoxOptions -> {
+     Background -> 
+      RGBColor[0.9882352941176471, 0.43137254901960786`, 
+        0.12941176470588237`], ImageSize -> {160, 40}}], 
+   Cell[
+    StyleData["CheckButtonText"], FontFamily -> "Source Sans Pro Semibold", 
+    FontSize -> 18, FontVariations -> {"CapsType" -> "AllCaps"}, FontColor -> 
+    GrayLevel[1]], 
+   Cell[
+    StyleData["QuizResultsText"], FontFamily -> "Source Sans Pro Semibold", 
+    FontSize -> 20, FontVariations -> {"CapsType" -> "AllCaps"}, FontColor -> 
+    RGBColor[0.29411764705882354`, 0.4, 0.5372549019607843]], 
+   Cell[
+    StyleData["ScoreText"], FontFamily -> "Source Sans Pro", FontSize -> 22, 
+    FontColor -> GrayLevel[0]], 
+   Cell[
+    StyleData["ResultsGrid"], Editable -> False, Deletable -> False, 
+    CellMargins -> {{70, Inherited}, {70, 0}}, ShowStringCharacters -> False, 
+    GridBoxOptions -> {FrameStyle -> Directive[
+        Thickness[Large], 
+        RGBColor[0.4549019607843137, 0.6196078431372549, 0.7843137254901961]],
+       GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+      GridBoxBackground -> {"Columns" -> {{
+           RGBColor[
+           0.9490196078431372, 0.9647058823529412, 0.9725490196078431]}}}, 
+      GridBoxDividers -> {
+       "Columns" -> {True, {False}, True}, "Rows" -> {True, {False}, True}}, 
+      GridBoxItemSize -> {"Columns" -> {{36}}}, 
+      GridBoxSpacings -> {"Columns" -> {Automatic, {
+           Offset[0.5599999999999999]}, Automatic}, "Rows" -> {Automatic, {
+           Offset[0.4]}, Automatic}}}], 
+   Cell[
+    StyleData["NumProbsCorrectText"], FontFamily -> "Source Sans Pro", 
+    FontSize -> 17], 
+   Cell[
+    StyleData["InlineFormula"], ShowStringCharacters -> True, 
+    MenuSortingValue -> 10000]}, Visible -> False, 
+  TaggingRules -> {"QuizChecked" -> False}, FrontEndVersion -> 
+  "12.2 for Mac OS X x86 (64-bit) (December 12, 2020)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "version"->{
+  Cell[97310, 2476, 124, 3, 70, "Text",ExpressionUUID->"be29ced8-80fe-4bc0-85a1-ce572f1c717e",
+   CellTags->"version"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"version", 103852, 2622}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 30, 0, 70, "ProblemTitle",ExpressionUUID->"6f06afcb-0d8d-4773-8e27-13a1924b2c70"],
+Cell[591, 22, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"570b6cc2-b417-45b7-a656-fd40bed11a7b"],
+Cell[678, 25, 192, 6, 70, "ProblemCaption",ExpressionUUID->"e5f6729d-d0fc-44a1-b393-137fcef29ba6"],
+Cell[873, 33, 7512, 191, 70, "ProblemChoiceGrid",ExpressionUUID->"00733bad-a8e8-4a8e-9b1f-24b99deee876"],
+Cell[8388, 226, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"4ee6b24d-bf05-49ba-bf4f-95777664675c"],
+Cell[8475, 229, 194, 6, 70, "ProblemCaption",ExpressionUUID->"dcf4d196-b64b-41e8-bc21-499d48469d44"],
+Cell[8672, 237, 1052, 27, 70, "Input",ExpressionUUID->"96e26c6e-4a00-4465-af6c-e80e17147517"],
+Cell[9727, 266, 7340, 190, 70, "ProblemChoiceGrid",ExpressionUUID->"8f13630c-3d3e-4f5f-af61-a1a0ca84956f"],
+Cell[17070, 458, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"43b99977-3029-4dad-9306-a18f6b6701a8"],
+Cell[17157, 461, 198, 6, 70, "ProblemCaption",ExpressionUUID->"54c94cc2-dbf1-4281-b3f1-6f74019ff8ba"],
+Cell[17358, 469, 1049, 25, 70, "Input",ExpressionUUID->"f4446b3f-8d80-4a97-b8b7-6f6bac848391"],
+Cell[18410, 496, 7750, 193, 70, "ProblemChoiceGrid",ExpressionUUID->"0b47a2ed-931e-41fc-9948-76a5c58535ce"],
+Cell[26163, 691, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"9dce344f-67f9-488b-a5fb-5b951971de89"],
+Cell[26250, 694, 134, 4, 70, "ProblemCaption",ExpressionUUID->"db5ac3c2-d559-4401-a4da-91e41ecc1b38"],
+Cell[26387, 700, 7306, 189, 70, "ProblemChoiceGrid",ExpressionUUID->"5b7e3028-dd17-41f2-b691-e2128e237771"],
+Cell[33696, 891, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"546de910-1ae5-4239-bf85-133393b15a3c"],
+Cell[33783, 894, 147, 4, 70, "ProblemCaption",ExpressionUUID->"dbdd20ab-373d-4e1f-af52-af7e3f214813"],
+Cell[33933, 900, 7504, 192, 70, "ProblemChoiceGrid",ExpressionUUID->"8ac4bc15-1b8d-4e1a-86ef-cae02a4b0bf1"],
+Cell[41440, 1094, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"8a139af6-a382-4bea-8b0f-8924e45dd4e7"],
+Cell[41527, 1097, 154, 4, 70, "ProblemCaption",ExpressionUUID->"a7f3aac9-8e72-4317-ae5d-beefade93c04"],
+Cell[41684, 1103, 7412, 190, 70, "ProblemChoiceGrid",ExpressionUUID->"fb417fc0-8b98-43a9-8454-24c3997f4129"],
+Cell[49099, 1295, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"f373be88-7093-442c-9675-afbcb84cafd6"],
+Cell[49186, 1298, 124, 4, 70, "ProblemCaption",ExpressionUUID->"2e77b173-40ab-480e-9975-f19531c87314"],
+Cell[49313, 1304, 7603, 194, 70, "ProblemChoiceGrid",ExpressionUUID->"39120c78-569f-4b84-9b04-bf305b2e4a27"],
+Cell[56919, 1500, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"3e1d8d2b-42e0-4b62-9e25-a885790abcce"],
+Cell[57006, 1503, 119, 4, 70, "ProblemCaption",ExpressionUUID->"cb6d9cc6-ac97-4d2f-ad3d-239d3d7687ec"],
+Cell[57128, 1509, 7868, 200, 70, "ProblemChoiceGrid",ExpressionUUID->"2aca0b46-b11e-4362-b13a-419c699ea05f"],
+Cell[64999, 1711, 84, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"74c45c8b-09db-487f-b03e-11d5d1e49116"],
+Cell[65086, 1714, 61, 0, 70, "ProblemCaption",ExpressionUUID->"3157bbee-7a4d-4c0c-b963-bb947f97c16f"],
+Cell[65150, 1716, 895, 25, 70, "Input",ExpressionUUID->"ff3e3b4f-a326-45c7-944b-ce6e2b7fc71e"],
+Cell[66048, 1743, 7310, 189, 70, "ProblemChoiceGrid",ExpressionUUID->"4a00317e-caaa-4e44-85c2-6213030255e8"],
+Cell[73361, 1934, 86, 1, 70, "ProblemSectionNoFeedback",ExpressionUUID->"c3b8c54b-3150-4923-bcf7-341ce260dd78"],
+Cell[73450, 1937, 83, 1, 70, "ProblemCaption",ExpressionUUID->"18e40f94-0168-4f0d-92d4-f620c0849f4a"],
+Cell[73536, 1940, 12793, 296, 70, "ProblemChoiceGrid",ExpressionUUID->"4a44fc2b-09f6-4dc0-8f7c-548380b565b5"],
+Cell[86332, 2238, 10975, 236, 70, "ResultsGrid",ExpressionUUID->"3bff6634-a62a-40e9-adbf-a87c45bd4d12"],
+Cell[97310, 2476, 124, 3, 70, "Text",ExpressionUUID->"be29ced8-80fe-4bc0-85a1-ce572f1c717e",
+ CellTags->"version"]
+}
+]
+*)
+
+(* End of internal cache information *)
