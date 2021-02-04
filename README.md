@@ -29,3 +29,9 @@
 
 第八节（2/9)
 神经网络架构以及图像处理功能综述
+
+Quiz:
+1- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/01_quiz.nb
+2- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/02_quiz.nb
+3- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/03_quiz.nb
+4- https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/04_quiz.nb
