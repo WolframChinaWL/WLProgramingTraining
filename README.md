@@ -39,3 +39,7 @@ Quiz:
 3. https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/03_quiz.nb
 
 4. https://www.wolframcloud.com/obj/online-courses/daily-study-group/quiz/series2/04_quiz.nb
+
+Exercise：
+
+https://www.wolframcloud.com/obj/online-courses/daily-study-group/api/GetExercises
